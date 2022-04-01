@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+header .title{
+  margin: 0 auto;
+}
+
+header h1{
+  text-align: center;
+  /* border-bottom: 1px solid black ; */
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, .5);
+  padding: 25px 0;
+}
+
+.homepic{
+  width: 100%;
+  height:80vh;
+  opacity: 0.5;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+button a {
+  text-decoration: none;
+  color: lightslategray;
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+}
+
+.contents .word {
+  margin-left: 3rem;
+  font-size: 28px;
+}
+
+.contents .person {
+  text-align: center;
+}
+
+.contents .person img.pic {
+  border-radius: 50%;
+  margin: 20px 0 5px 25px;
+}
