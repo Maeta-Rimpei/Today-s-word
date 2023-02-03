@@ -18,5 +18,5 @@ Route::get('/word', [WordController::class, 'word'])->name('word');
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });

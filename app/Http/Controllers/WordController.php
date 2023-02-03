@@ -24,16 +24,16 @@ class WordController extends Controller
     {
         // レコード抽選
         $id = mt_rand(1, 100);
-        $base = App\Word::find($id);
+        $rand_word = App\Word::find($id);
 
         // レコード抽選に当選した名言を取ってくる
-        $word = $base->word;
+        $word = $rand_word->word;
 
         // レコード抽選に当選した名言の偉人の名前を取ってくる
-        $person_name = $base->person->name;
+        $person_name = $rand_word->person->name;
 
         //その人の画像を取ってくる
-        $person_pic = $base->person->picture;
+        $person_pic = $rand_word->person->picture;
 
         return view('word', compact('word', 'person_name', 'person_pic'));
     }
