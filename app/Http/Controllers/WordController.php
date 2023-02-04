@@ -33,7 +33,7 @@ class WordController extends Controller
         $person_name = $rand_word->person->name;
 
         //その人の画像を取ってくる
-        $person_pic = $rand_word->person->picture;
+        $person_pic = base64_encode(file_get_contents($rand_word->person->picture));
 
         return view('word', compact('word', 'person_name', 'person_pic'));
     }
